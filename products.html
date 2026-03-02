@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BuildMart Products</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<!-- NAVBAR (same as index) -->
+<div class="navbar">
+
+<div class="logo">
+<div class="logo-icon">
+<i class="bi bi-buildings"></i>
+</div>
+<div class="logo-text">BuildMart</div>
+</div>
+
+<div class="hamburger" onclick="toggleMenu()">
+    <i class="bi bi-list"></i>
+</div>
+<div class="menu" id="menu">
+<div class="indicator" id="indicator"></div>
+<i class="bi bi-moon toggle" onclick="toggleDark()"></i>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Products</a>
+<a href="contact.html">Contact</a>
+
+<button class="quote-btn" onclick="location.href='contact.html'">Get Estimate</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- PARTICLE BACKGROUND -->
+<div class="particles" id="particles"></div>
+
+
+
+
+
+<!-- PRODUCTS SECTION -->
+<section class="products-section">
+
+<div class="section-header">
+<h2>Our Categories</h2>
+<p>Explore all construction materials</p>
+</div>
+
+<div class="categories-grid">
+
+
+<!-- Category 1 -->
+<div class="flip-card reveal tilt-card">
+<div class="flip-card-inner ">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg">
+</div>
+
+</div>
+
+<h3>Cement</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Cement</h3>
+<p>High quality cement</p>
+<button onclick="location.href='cement.html'">View</button>
+</div>
+
+</div>
+</div>
+
+
+<!-- Category 2 -->
+<div class="flip-card reveal ">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg">
+</div>
+
+</div>
+
+<h3>Steel</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Steel</h3>
+<p>Strong steel bars</p>
+<button onclick="location.href='steel.html'">View</button>
+</div>
+
+</div>
+</div>
+
+
+<!-- Category 3 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/5691620/pexels-photo-5691620.jpeg">
+</div>
+
+</div>
+
+<h3>Paint</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Paint</h3>
+<p>Premium paints</p>
+<button onclick="location.href='paint.html'">View</button>
+</div>
+
+</div>
+</div>
+
+
+<!-- Category 4 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg">
+</div>
+
+</div>
+
+<h3>Bricks</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Bricks</h3>
+<p>Durable bricks</p>
+<button onclick="location.href='bricks.html'">View</button>
+</div>
+
+</div>
+</div>
+
+
+<!-- Category 5 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/221027/pexels-photo-221027.jpeg">
+</div>
+</div>
+<h3>Sand</h3>
+</div>
+<div class="flip-card-back">
+<h3>Sand</h3>
+<p>Premium quality sand</p>
+<button onclick="location.href='sand.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 6 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg">
+</div>
+</div>
+<h3>Gravel</h3>
+</div>
+<div class="flip-card-back">
+<h3>Gravel</h3>
+<p>Strong gravel material</p>
+<button onclick="location.href='gravel.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 7 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg">
+</div>
+</div>
+<h3>Blocks</h3>
+</div>
+<div class="flip-card-back">
+<h3>Blocks</h3>
+<p>Concrete blocks</p>
+<button onclick="location.href='blocks.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 8 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg">
+</div>
+</div>
+<h3>Tiles</h3>
+</div>
+<div class="flip-card-back">
+<h3>Tiles</h3>
+<p>Premium floor tiles</p>
+<button onclick="location.href='tiles.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 9 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg">
+</div>
+</div>
+<h3>Wood</h3>
+</div>
+<div class="flip-card-back">
+<h3>Wood</h3>
+<p>High quality timber</p>
+<button onclick="location.href='wood.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 10 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg">
+</div>
+</div>
+<h3>Pipes</h3>
+</div>
+<div class="flip-card-back">
+<h3>Pipes</h3>
+<p>Durable piping</p>
+<button onclick="location.href='pipes.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 11 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg">
+</div>
+</div>
+<h3>Roofing</h3>
+</div>
+<div class="flip-card-back">
+<h3>Roofing</h3>
+<p>Strong roofing sheets</p>
+<button onclick="location.href='roofing.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 12 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg">
+</div>
+</div>
+<h3>Glass</h3>
+</div>
+<div class="flip-card-back">
+<h3>Glass</h3>
+<p>Premium glass panels</p>
+<button onclick="location.href='glass.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 13 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg">
+</div>
+</div>
+<h3>Tools</h3>
+</div>
+<div class="flip-card-back">
+<h3>Tools</h3>
+<p>Construction tools</p>
+<button onclick="location.href='tools.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 14 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg">
+</div>
+</div>
+<h3>Electrical</h3>
+</div>
+<div class="flip-card-back">
+<h3>Electrical</h3>
+<p>Electrical supplies</p>
+<button onclick="location.href='electrical.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 15 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg">
+</div>
+</div>
+<h3>Concrete</h3>
+</div>
+<div class="flip-card-back">
+<h3>Concrete</h3>
+<p>Ready mix concrete</p>
+<button onclick="location.href='concrete.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 16 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg">
+</div>
+</div>
+<h3>Pavers</h3>
+</div>
+<div class="flip-card-back">
+<h3>Pavers</h3>
+<p>Outdoor pavers</p>
+<button onclick="location.href='pavers.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 17 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg">
+</div>
+</div>
+<h3>Rebars</h3>
+</div>
+<div class="flip-card-back">
+<h3>Rebars</h3>
+<p>Steel rebars</p>
+<button onclick="location.href='rebars.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 18 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg">
+</div>
+</div>
+<h3>Flooring</h3>
+</div>
+<div class="flip-card-back">
+<h3>Flooring</h3>
+<p>Premium flooring</p>
+<button onclick="location.href='flooring.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 19 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg">
+</div>
+</div>
+<h3>Panels</h3>
+</div>
+<div class="flip-card-back">
+<h3>Panels</h3>
+<p>Wall panels</p>
+<button onclick="location.href='panels.html'">View</button>
+</div>
+</div>
+</div>
+
+
+<!-- Category 20 -->
+<div class="flip-card reveal">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<div class="circle-container">
+<div class="circle-ring"></div>
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg">
+</div>
+</div>
+<h3>Hardware</h3>
+</div>
+<div class="flip-card-back">
+<h3>Hardware</h3>
+<p>Construction hardware</p>
+<button onclick="location.href='hardware.html'">View</button>
+</div>
+</div>
+</div>
+
+
+
+<!-- Add more same structure up to 20 -->
+
+</div>
+</section>
+
+
+
+
+<!-- FOOTER (same as index) -->
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<div class="footer-logo">
+<i class="bi bi-buildings"></i>
+BuildMart
+</div>
+
+<p class="footer-tagline">
+Premium construction materials for strong and lasting buildings.
+</p>
+
+</div>
+
+<div class="footer-contact">
+
+<div class="footer-item">
+<i class="bi bi-envelope"></i>
+<span>buildmart@email.com</span>
+</div>
+
+<div class="footer-item">
+<i class="bi bi-telephone"></i>
+<span>+91 9876543210</span>
+</div>
+
+<div class="footer-social">
+<i class="bi bi-facebook"></i>
+<i class="bi bi-instagram"></i>
+<i class="bi bi-linkedin"></i>
+<i class="bi bi-whatsapp"></i>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 BuildMart
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+<!-- FLOATING SOCIAL MEDIA -->
+<div class="social-float">
+
+    <a href="https://wa.me/919876543210" target="_blank" class="social-btn whatsapp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <a href="https://facebook.com/" target="_blank" class="social-btn facebook">
+        <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com/" target="_blank" class="social-btn instagram">
+        <i class="bi bi-instagram"></i>
+    </a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

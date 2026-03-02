@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BuildMart Premium Navbar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="navbar" id="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+
+    <div class="logo-icon">
+        <i class="bi bi-buildings"></i>
+    </div>
+
+    <div class="logo-text">
+        BuildMart
+    </div>
+
+</div>
+
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="bi bi-list"></i>
+    </div>
+
+
+    <!-- MENU -->
+    <div class="menu" id="menu">
+
+        <div class="indicator" id="indicator"></div>
+
+        <i class="bi bi-moon toggle" onclick="toggleDark()"></i>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+
+        <button class="quote-btn magnetic-btn" onclick="location.href='contact.html'">
+            Get Estimate
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- PARTICLE BACKGROUND -->
+<div class="particles" id="particles"></div>
+
+
+
+
+
+
+
+<section class="hero-section">
+
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    
+
+    <!-- INDICATORS (dots) -->
+    <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+
+    </div>
+
+
+    <!-- SLIDES -->
+    <div class="carousel-inner">
+
+
+        <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/1437493/pexels-photo-1437493.jpeg" class="d-block w-100 hero-img">
+        </div>
+
+
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/17580990/pexels-photo-17580990.jpeg" class="d-block w-100 hero-img">
+        </div>
+
+
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg" class="d-block w-100 hero-img">
+        </div>
+
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8dfd" class="d-block w-100 hero-img">
+        </div>
+
+
+    </div>
+<div class="hero-overlay"></div>
+
+    <!-- LEFT ARROW -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+
+    <!-- RIGHT ARROW -->
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+
+    <!-- HERO TEXT -->
+    <div class="hero-content">
+
+        <h1>Build Strong. Build Smart.</h1>
+
+        <p>Premium Builder Materials for Every Project</p>
+
+        <button class="hero-btn-primary magnetic-btn">Explore Products</button>
+        
+
+        <button class="hero-btn-outline magnetic-btn" onclick="location.href='contact.html'">Get Estimate</button>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- CATEGORIES SECTION -->
+<section class="categories-section">
+
+<div class="container">
+
+<div class="section-header">
+<h2>Browse Categories</h2>
+<p>Explore premium construction materials</p>
+</div>
+
+<div class="categories-grid">
+
+
+<!-- Cement -->
+<div class="flip-card reveal ">
+
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg">
+</div>
+
+</div>
+
+<h3>Cement</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Cement</h3>
+<p>Strong and reliable cement.</p>
+<button class="magnetic-btn" onclick="location.href='cement.html'">View Products</button>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Steel -->
+<div class="flip-card reveal">
+
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg">
+</div>
+
+</div>
+
+<h3>Steel Bars</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Steel Bars</h3>
+<p>High-quality steel bars.</p>
+<button class="magnetic-btn" onclick="location.href='steel.html'">View Products</button>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Paint -->
+<div class="flip-card reveal">
+
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/5691620/pexels-photo-5691620.jpeg">
+</div>
+
+</div>
+
+<h3>Paint</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Paint</h3>
+<p>Premium paints.</p>
+<button class="magnetic-btn" onclick="location.href='paint.html'">View Products</button>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Bricks -->
+<div class="flip-card reveal">
+
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<div class="circle-container">
+
+<div class="circle-ring"></div>
+
+<div class="circle-img">
+<img src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg">
+</div>
+
+</div>
+
+<h3>Bricks</h3>
+
+</div>
+
+<div class="flip-card-back">
+<h3>Bricks</h3>
+<p>Durable bricks.</p>
+<button class="magnetic-btn" onclick="location.href='bricks.html'">View Products</button>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="view-all-container">
+<button class="view-all-btn magnetic-btn" onclick="location.href='products.html'">View All Products</button>
+</div>
+
+
+</div>
+</section>
+
+
+
+
+<!-- 
+<div class="section-divider bg-white">
+    <div class="glow-divider bg-white"></div>
+</div> -->
+
+
+
+
+
+
+<section class="about-preview reveal">
+
+    <div class="about-container">
+
+        <!-- LEFT -->
+        <div class="about-text">
+
+            <h2>About BuildMart</h2>
+
+            <p>
+                BuildMart is your trusted partner for premium construction materials. 
+                We provide high-quality cement, steel, paints, and building essentials 
+                to ensure durability, safety, and excellence in every project.
+            </p>
+
+            <button onclick="location.href='about.html'" class="about-btn magnetic-btn">
+                More About Us
+            </button>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="about-image">
+
+            <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="testimonial-section reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Trusted by builders, engineers, and contractors</p>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+
+                <div class="testimonial-text">
+                    "BuildMart provides excellent quality materials. Delivery was fast and support was very professional."
+                </div>
+
+                <div class="testimonial-user">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+                    <div>
+                        <h4>Arjun Nair</h4>
+                        <span>Civil Engineer</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+
+                <div class="testimonial-text">
+                    "The steel and cement quality exceeded expectations. Best for construction projects."
+                </div>
+
+                <div class="testimonial-user">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+                    <div>
+                        <h4>Meera Joseph</h4>
+                        <span>Contractor</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+
+                <div class="testimonial-text">
+                    "Reliable supplier with great pricing. Their customer service is outstanding."
+                </div>
+
+                <div class="testimonial-user">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg">
+                    <div>
+                        <h4>Rahul Menon</h4>
+                        <span>Builder</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT SIDE -->
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                <i class="bi bi-buildings"></i>
+                BuildMart
+            </div>
+
+            <p class="footer-tagline">
+                Premium construction materials for strong and lasting buildings.
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="footer-contact">
+
+            <div class="footer-item">
+                <i class="bi bi-envelope"></i>
+                <span>buildmart@email.com</span>
+            </div>
+
+            <div class="footer-item">
+                <i class="bi bi-telephone"></i>
+                <span>+91 9876543210</span>
+            </div>
+
+            <div class="footer-social">
+
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-whatsapp"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        © 2026 BuildMart. All rights reserved.
+    </div>
+
+</footer>
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+<!-- FLOATING SOCIAL MEDIA -->
+<div class="social-float">
+
+    <a href="https://wa.me/919876543210" target="_blank" class="social-btn whatsapp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <a href="https://facebook.com/" target="_blank" class="social-btn facebook">
+        <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com/" target="_blank" class="social-btn instagram">
+        <i class="bi bi-instagram"></i>
+    </a>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
