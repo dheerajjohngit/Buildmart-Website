@@ -1,3 +1,13 @@
+function toggleMenu(){
+
+    const menu = document.getElementById("menu");
+
+    if(menu){
+        menu.classList.toggle("active");
+    }
+
+}
+
 
 /* SLIDING INDICATOR */
 
@@ -6,9 +16,11 @@ const indicator=document.getElementById("indicator");
 
 function moveIndicator(el){
 
-indicator.style.width=el.offsetWidth+"px";
-indicator.style.left=el.offsetLeft+"px";
-indicator.style.top=el.offsetTop+"px";
+    if(!el || !indicator) return;
+
+    indicator.style.width = el.offsetWidth + "px";
+    indicator.style.left = el.offsetLeft + "px";
+    indicator.style.top = el.offsetTop + "px";
 
 }
 
@@ -27,8 +39,14 @@ moveIndicator(link);
 });
 
 /* INIT */
-window.onload=()=>{
-moveIndicator(document.querySelector(".menu a.active"));
+window.onload = () => {
+
+    const activeLink = document.querySelector(".menu a.active");
+
+    if(activeLink){
+        moveIndicator(activeLink);
+    }
+
 };
 
 
@@ -957,3 +975,44 @@ function startCounter(){
 }
 
 window.addEventListener("scroll", startCounter);
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= */
+/* MOBILE MENU TOGGLE */
+/* ========================= */
+
+function toggleMenu(){
+
+    const menu = document.getElementById("menu");
+
+    if(menu){
+        menu.classList.toggle("active");
+    }
+
+}
+
+
+/* Close menu after clicking link (optional) */
+document.querySelectorAll("#menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        const menu =
+        document.getElementById("menu");
+
+        if(menu){
+            menu.classList.remove("active");
+        }
+
+    });
+
+});

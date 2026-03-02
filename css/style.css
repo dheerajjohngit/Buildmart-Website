@@ -4688,6 +4688,9 @@ border-color:#555;
 
     animation:navbarGlow 4s linear infinite;
 
+    pointer-events: none;   /* ⭐ THIS FIXES THE HAMBURGER */
+
+
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -6315,5 +6318,59 @@ body:not(.dark) .particle{
     box-shadow:
     0 0 20px rgba(0,198,255,0.4),
     0 10px 40px rgba(0,0,0,0.3);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE MENU */
+@media(max-width:768px){
+
+.menu{
+
+    position:absolute;
+    top:80px;
+    right:20px;
+
+    background:#111;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    display:none;
+}
+
+.menu.active{
+    display:flex;
+}
+
+.hamburger{
+    display:block;
+    font-size:28px;
+    cursor:pointer;
+}
 
 }
